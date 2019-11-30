@@ -36,9 +36,9 @@ module.exports = {
           },
           {
             loader: 'sass-loader',
-            options: {
-              modules: true,
-            },
+            // options: {
+            //   modules: true,
+            // },
           },
         ]
       },
