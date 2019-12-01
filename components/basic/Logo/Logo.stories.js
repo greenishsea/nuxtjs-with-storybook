@@ -1,12 +1,16 @@
+import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
 import Logo from './Logo.vue'
+import MarkdownText from './Logo.md'
 
-export default {
-  title: 'basic|Logo'
-}
-
-export const LogoDefault = () => ({
-  components: { Logo },
-  template: `<Logo @click="action"></Logo>`,
-  methods: { action: action('clicked') }
-})
+storiesOf('basic|Logo', module).add(
+  'Default',
+  () => ({
+    components: { Logo },
+    template: `<Logo @click="action"></Logo>`,
+    methods: { action: action('clicked') }
+  }),
+  {
+    notes: { markdown: MarkdownText }
+  }
+)
