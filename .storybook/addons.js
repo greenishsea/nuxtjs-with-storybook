@@ -5,3 +5,4 @@ import '@storybook/addon-viewport/register';
 import '@storybook/addon-storysource/register';
 import '@storybook/addon-notes/register';
 import '@storybook/addon-console';
+// import 'storybook-addon-vue-info/lib/register'; // INFO: Please consider using vue-docgen-loader instead

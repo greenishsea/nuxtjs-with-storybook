@@ -1,6 +1,19 @@
-import { configure } from '@storybook/vue';
-import './storybook-total.scss';
+import { configure, addDecorator } from '@storybook/vue';
+import { withOptions } from '@storybook/addon-options';
+import Centered from '@storybook/addon-centered/vue';
 
-// automatically import all files ending in *.stories.js
-configure(require.context('../stories', true, /\.stories\.js$/), module);
-// configure(require.context('../components', true, /\.stories\.(js|mdx)$/), module);
+addDecorator(
+  withOptions({
+      name: 'Storybook for Nuxt Project',
+      hierarchyRootSeparator: /\|/,
+      // url: '',
+      // selectedAddonPanel: 'storybook/stories/stories-panel' // obsolete property ?
+      // selectedPanel: 'storybook/actions/panel' // new one
+  })
+)
+addDecorator(Centered)
+// addDecorator(() => ({
+//   template: '<div style="textAlign: center"><story/></div>',
+// }));
+
+configure(require.context('../components', true, /\.stories\.(js|mdx)$/), module);
