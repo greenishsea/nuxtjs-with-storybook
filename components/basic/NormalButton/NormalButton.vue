@@ -6,7 +6,7 @@
 
 <style lang="scss">
 button {
-  color: yellowgreen;
+  color: $primary-color;
 }
 </style>
 <script>

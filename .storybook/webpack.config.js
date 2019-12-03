@@ -7,11 +7,26 @@ module.exports = ({ config }) => {
 
   config.module.rules.push({
     test: /\.scss$/,
-    loaders: [
-      'style-loader',
-      'css-loader',
-      'sass-loader'
-    ]
+    use: [
+      {
+        loader: 'style-loader',
+      },
+      {
+        loader: 'css-loader',
+      },
+      {
+        loader: 'sass-loader',
+      },
+      {
+        loader: 'sass-resources-loader',
+        options: {
+          resources: [
+            './assets/scss/_variables.scss',
+          ],
+          rootPath
+        }
+      },
+    ],
   })
 
   config.module.rules.push({

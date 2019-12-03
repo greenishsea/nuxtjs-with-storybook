@@ -43,8 +43,15 @@ export default {
     '@nuxtjs/axios',
     // '@nuxtjs/pwa', // Memo: Disable pwa temporary for development
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/style-resources'
   ],
+  /*
+   ** Style Resources
+   */
+  styleResources: {
+    scss: ['~/assets/scss/_variables.scss']
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
