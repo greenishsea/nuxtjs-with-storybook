@@ -39,7 +39,7 @@ import {
 import MglGeocoderControl from "vue-mapbox-geocoder" // https://github.com/mapbox/mapbox-gl-geocoder/issues/252
 import MapboxLanguage from "@mapbox/mapbox-gl-language"
 
-const ACCESS_TOKEN = 'pk.eyJ1IjoiZ3JlZW5pc2hzZWFqcCIsImEiOiJjazV3bjFxNDIxd3VqM21sYmE4bW1hM2luIn0.dX5vzQm3vOIDo6tpnWaSSw'
+const ACCESS_TOKEN = 'pk..'
 const MAP_STYLE = 'mapbox://styles/mapbox/streets-v8'
 
 export default {
