@@ -15,6 +15,18 @@ export default {
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    // link: [
+    //   { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    //   {
+    //     rel: 'stylesheet',
+    //     href: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css'
+    //   },
+    //   {
+    //     rel: 'stylesheet',
+    //     href:
+    //       'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css'
+    //   }
+    // ]
   },
   /*
    ** Customize the progress-bar color
